@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Route App</title>
+</head>
+<body>
+  <h1>Bus Route App</h1>
+  <input type="file" id="csvFileInput" accept=".csv">
+  <button id="playRouteButton">Play Route</button>
+  <div id="map" style="height: 500px;"></div>
+  
+  <div id="routeStatusPanelUpdate" style="border: 1px solid green;margin: 16rem"></div> <!-- Add this element to show route summary -->
+  <div id="routeStatusPanel" style="border: 1px solid red;"></div> <!-- Add this element to show route summary -->
+  
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzWsBmPaT8oRuoDvvuZfMK1ZZ1x0j_9fI&libraries=places,directions"></script>
+
+  <script src="../dist/bundle.js"></script>
+</body>
+</html>
