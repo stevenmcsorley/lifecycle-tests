@@ -1,14 +1,13 @@
 {
-    "compilerOptions": {
-      "target": "es6",
-      "module": "es6",
-      "outDir": "./dist",
-      "baseUrl": "./",
-      "paths": {
-        "papaparse": ["node_modules/papaparse/papaparse.js"]
-      },
-      "strict": true,
-      "esModuleInterop": true
-    }
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "papaparse": ["node_modules/papaparse/papaparse.js"]
+    },
+    "strict": true,
+    "esModuleInterop": true
   }
-  
+}

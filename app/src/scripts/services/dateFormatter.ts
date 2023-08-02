@@ -53,6 +53,6 @@ export function formatDurationText(duration: number): string {
 }
 
 // Helper function to add leading zero to single-digit numbers
-function padZero(num: number): string {
+export function padZero(num: number): string {
   return num.toString().padStart(2, '0');
 }

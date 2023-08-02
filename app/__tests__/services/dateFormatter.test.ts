@@ -1,4 +1,4 @@
-import { formatTime, parseTimeStringToDate } from '../src/scripts/services/dateFormatter';
+import { formatTime, parseTimeStringToDate } from '../../src/scripts/services/dateFormatter';
 
 describe('formatTime', () => {
   it('should return formatted time as HH:mm', () => {

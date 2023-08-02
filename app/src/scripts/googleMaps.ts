@@ -1,7 +1,7 @@
 import { BusStop } from "../typings/IBusStop.types";
 import { getGeocodeResults } from "./services/geocode";
 import { calculateRoute } from "./services/directions";
-import { displayRouteSummary } from "./services/routeSummary";
+import { displayRouteSummary, generateRouteSummaryData } from "./services/routeSummary";
 import { addMarkersOnMap } from "./services/mapMarkers";
 
 export const plotRouteOnMap = async (map: google.maps.Map, stops: BusStop[]) => {
@@ -19,7 +19,8 @@ export const plotRouteOnMap = async (map: google.maps.Map, stops: BusStop[]) => 
 
   const summaryPanel = document.getElementById("routeStatusPanel");
   if (summaryPanel) {
-    displayRouteSummary(summaryPanel, route, stops);
+    const summaryData = generateRouteSummaryData(route, stops);
+    displayRouteSummary(summaryPanel, summaryData);
   }
 
   addMarkersOnMap(map, stops, geocodeResults);
